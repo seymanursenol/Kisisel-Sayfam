@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şeyma Nur Şenol - Kişisel Web Sayfası</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+
+        }
+        .left-panel {
+            background-color: #6a0dad; /* Mor renk */
+            color: white;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+            font-size: 25px;
+        }
+        .left-panel h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .left-panel h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .left-panel h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .right-panel {
+        width: 70%;
+        padding: 2em;
+        position: relative;
+        }
+
+        .right-panel::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('Images/background2.jpg');
+            background-size: cover;
+            filter: brightness(20%); /* Örneğin parlaklığı %50'ye düşürme filtresi */
+            z-index: -1; /* Resmi yazıların arkasında tutar */
+        }
+        .section {
+            padding: 1em 0;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+        footer {
+            background-color: #4f0b7f; /* Mor renk */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 70%;
+            margin-left: -1.5%;
+            bottom: 0;
+        }
+        .social-media a {
+            margin: 0 0.5em;
+            color: rgb(223, 179, 255); /* Mor renk */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-panel">
+        <h1>Şeyma</h1>
+        <h1>Nur</h1>
+        <h1>Şenol</h1>
+        <p>Junior Web Developer</p>
+    </div>
+    <div class="right-panel">
+        <nav> </nav>
+        <section id="hakkimda" class="section">
+            <h2>Hakkımda</h2>
+            <p>İstanbul'da doğdum ve Ordu memleketim.
+                İlkokul, ortaokul ve liseyi İstanbul'da
+                bitirdikten sonra üniversite için Tokat'a
+                gittim. Burada bölümüme uygun eğitimi
+                alarak mezun oldum. Şu anda meslek
+                hayatıma devam ediyorum ve kendimi
+                geliştirmek adına her zaman çalışmaya
+                devam ediyorum. Bir çok alandan eğitim aldıktan sonra kendimi web alanında geliştiriyorum.
+                Junior Web Developer olarak kariyerime devam ediyorum.</p>
+        </section>
+        <section id="projeler" class="section">
+            <h2>Projeler</h2>
+            <p style="font-size: 16px;">Proje 1: FoodQueen</p>
+            <p>Bu benim yaz stajımda geliştirdiğim full stack ilk projem. Angular, .Net Core ve Sql Server kullandım. 
+                Projemin amacı ise kullanıcılar istediği bir restorantlardan yemek sipariş edebilir. Bu siparişlerin sipariş durumları da olmakta.</p>
+                <p style="font-size: 16px;">Proje 2: PetsLover</p>
+                <p>Üniversite hayatımda bitirme projem olarak geliştirdim. Bu projede MVC, .Net Core ve SQL Server kullandım. Proje tamamen benim tasarımımla geliştirilmiştir. Projenin amacı bakıcı ve hayvan sahibi kullanıcılar arasında iletişim sağlamaktadır. Hayvan sahibi olan bir kullanıcımız siteye kayıt olup giriş yaptıktan sonra bakıcılarla iletişime geçip geçici bir süreliğine evcil hayvanına ücret akrşılığı baktırabilir. Aynı zamanda her kullanıcımız bakıcı profiline de sahip olabilir. Bakıcılar hayatlarını devam ettirmek için para kazanırken hayvan sahipleri de güvenli bir şekilde evcil hayvanlarına baktırabilir.Bunlarla beraber her kullanıcı hayvanlarımıza mama satın alarak bağış yapabilir. Böylece dünyadaki hayvanlarımızın ne kadar önemli olduğunu vurgulamış oluruz.</p>
+        </section>
+        <section id="beceriler" class="section">
+            <h2>Beceriler</h2>
+            <p>#C, .Net Core, MVC, Angular, SQL Server, Unity, Web Developer, API</p>
+        </section>
+        <section id="iletisim" class="section">
+            <h2>İletişim</h2>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/seyma-nur-senol-28a923271/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/seymanursenol" target="_blank">GitHub</a>
+                <!-- Diğer sosyal medya bağlantılarınızı buraya ekleyebilirsiniz -->
+            </div>
+        </section>
+        <footer>
+            <p>© 2024 Şeyma Nur Şenol. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+</body>
+</html>
